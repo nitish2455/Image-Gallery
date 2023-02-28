@@ -17,9 +17,9 @@ function App() {
   
    useEffect(() => {
     if(theme === "dark"){
-      document.documentElement.classList.add("dark");
+      document.documentElement.classList.add("bg-black");
     } else{
-      document.documentElement.classList.remove("dark");
+      document.documentElement.classList.remove("bg-black");
     }
       },[theme]);
 
@@ -46,7 +46,7 @@ function App() {
     <div className="h-full bg-white dark:bg-black"/>
     <Background >
       <SearchField />
-     <button className="bg-gray-200 text-black rounded-3xl" onClick={handleThemeSwitch}>Dark Mode</button>
+     <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-2 right" onClick={handleThemeSwitch}>Dark Mode</button>
 
 
     </Background>
