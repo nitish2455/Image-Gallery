@@ -47,7 +47,7 @@ function App() {
     <Background >
       <SearchField />
      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-2 right" onClick={handleThemeSwitch}>Dark Mode</button>
-
+    <h1 className="text-center mt-6 underline text-2xl text-white">Results for {searchImage || 'Cats'}</h1>
 
     </Background>
     <Images />
